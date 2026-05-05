@@ -1,62 +1,73 @@
 # 🖨️ 3D Print Manager PRO
 
-> Десктопний застосунок для автоматизації обліку замовлень та контролю використання матеріалів у сфері 3D-друку.
+> Desktop application for managing orders and tracking material usage in 3D printing.
 
-## 📌 Опис
-**3D Print Manager PRO** — це локальний desktop-додаток, розроблений для спрощення роботи з замовленнями у 3D-друк студіях або навчальних лабораторіях.
+## 📌 Description
 
-**Програма дозволяє:**
-* вести облік замовлень;
-* контролювати залишки матеріалів (пластику);
-* автоматично розраховувати вартість;
-* генерувати PDF-чек;
-* експортувати дані в Excel;
-* аналізувати витрати матеріалу.
+**3D Print Manager PRO** is a local desktop application designed to simplify order management in 3D printing studios or educational labs.
+
+**The app allows you to:**
+
+* manage orders;
+* track material (filament) usage;
+* automatically calculate costs;
+* generate PDF receipts;
+* export data to Excel;
+* analyze material consumption.
 
 ---
 
-## 🧠 Основні можливості
+## 🧠 Features
 
-### 📦 Управління замовленнями
-* створення, редагування та видалення замовлень;
-* зміна статусу (в роботі / виконано);
-* пошук по клієнтах;
-* кольорова індикація статусів.
+### 📦 Order Management
 
-### 🏭 Облік матеріалів
-* додавання та редагування пластику;
-* контроль залишків на складі;
-* автоматичне списання матеріалу.
+* create, edit, and delete orders;
+* change status (in progress / completed);
+* search by client;
+* color status indicators.
 
-### 💰 Фінанси
-Автоматичний розрахунок вартості за формулою:
+### 🏭 Material Tracking
+
+* add and edit materials;
+* monitor stock levels;
+* automatic material deduction.
+
+### 💰 Finance
+
+Automatic cost calculation using the formula:
 `cost = (weight / 1000) * price_per_kg`
 
-### 📄 Звіти
-* генерація PDF-чеків;
-* експорт у Excel (`.xlsx`);
-* побудова графіків витрат.
+### 📄 Reports
+
+* generate PDF receipts;
+* export to Excel (`.xlsx`);
+* build usage charts.
 
 ### ⚡ UX
-* гарячі клавіші;
-* збереження сесії (Remember me);
-* простий і зрозумілий GUI.
+
+* keyboard shortcuts;
+* session saving (Remember me);
+* simple and clear GUI.
 
 ---
 
-## 🏗️ Архітектура
-Застосунок побудований як локальний desktop-додаток і складається з:
+## 🏗️ Architecture
+
+The application is built as a local desktop app and consists of:
+
 * GUI (`PyQt5`)
-* Бізнес-логіки
-* `SQLite` бази даних
+* Business logic
+* `SQLite` database
 
-База даних містить 2 основні таблиці:
-1. `orders` — замовлення
-2. `plastic` — матеріали
+Database includes 2 main tables:
+
+1. `orders` — orders
+2. `plastic` — materials
 
 ---
 
-## 🛠️ Технології
+## 🛠️ Technologies
+
 * Python 3
 * PyQt5
 * SQLite3
@@ -65,50 +76,66 @@
 
 ---
 
-## 🚀 Запуск
+## 🚀 Run
 
-Склонуйте репозиторій та встановіть залежності:
+Clone the repository and install dependencies:
 
 ```bash
-git clone [https://github.com/your_username/3d-print-manager.git](https://github.com/your_username/3d-print-manager.git)
+git clone https://github.com/your_username/3d-print-manager.git
 cd 3d-print-manager
 pip install -r requirements.txt
 python main.py
 ```
 
-🔐 Авторизація (за замовчуванням)
-Login: admin
+---
 
+## 🔐 Default Login
+
+Login: admin
 Password: 1234
 
-🗄️ База даних
-Використовується SQLite. База даних:
+---
 
-створюється автоматично при першому запуску;
+## 🗄️ Database
 
-зберігається локально за шляхом: Documents/3D_Print_Manager/
+SQLite is used. The database:
 
-📸 Інтерфейс
-(Додайте скріншоти головного вікна, вікна створення замовлення та звіту)
+* is created automatically on first launch;
+* is stored locally at: `Documents/3D_Print_Manager/`
 
-⚠️ Обмеження:
-- відсутня багатокористувацька система;
+---
 
-- авторизація реалізована у спрощеному вигляді;
+## 📸 Interface
 
-- локальна база даних (без підключення до сервера).
+<img width="322" height="453" alt="Знімок екрана 2026-05-04 о 14 09 36" src="https://github.com/user-attachments/assets/782ef3cd-257f-480b-b31f-a280673a33fe" />
 
-📈 Подальший розвиток
-[ ] винесення логіки в окремі модулі
+<img width="1728" height="982" alt="Знімок екрана 2026-05-04 о 14 02 03" src="https://github.com/user-attachments/assets/991081f3-2f48-4c56-9f93-24fabac148fb" />
 
-[ ] додавання API
+<img width="1728" height="982" alt="Знімок екрана 2026-05-04 о 14 03 33" src="https://github.com/user-attachments/assets/1f2ee472-8c15-43a1-8373-08cae20faf2f" />
 
-[ ] багатокористувацький режим та система ролей
+<img width="397" height="534" alt="Знімок екрана 2026-05-04 о 14 04 24" src="https://github.com/user-attachments/assets/c5843ab1-11cb-4841-813a-504b6a765903" />
 
-[ ] хмарне збереження (бекапи)
+---
 
-👨‍💻 Автор
-Студент спеціальності "Комп’ютерні науки".
+## ⚠️ Limitations
 
-Розроблено в рамках навчальної практики.
+* no multi-user system;
+* simplified authentication;
+* local database only (no server connection).
 
+---
+
+## 📈 Future Improvements
+
+* [ ] move logic into separate modules
+* [ ] add API
+* [ ] multi-user system with roles
+* [ ] cloud storage (backups)
+
+---
+
+## 👨‍💻 Author
+
+Computer Science student.
+
+Developed as part of academic practice.
