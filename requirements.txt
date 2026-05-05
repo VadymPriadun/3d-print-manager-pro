@@ -1,4 +1,3 @@
-py
-PyQt5
-openpyxl
-matplotlib
+PyQt5==5.15.9
+matplotlib==3.8.2
+openpyxl==3.1.2

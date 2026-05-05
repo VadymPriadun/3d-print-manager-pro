@@ -1,7 +1,15 @@
+# Віртуальне середовище
 venv/
+env/
+.env
+
+# Кеш Python
 __pycache__/
 *.pyc
+
+# База даних (за бажанням, якщо вона лежить в теці проєкту, хоча у тебе вона в Documents)
 *.db
-*.sqlite3
-*.xlsx
-*.pdf
+
+# Файли IDE
+.idea/
+.vscode/
