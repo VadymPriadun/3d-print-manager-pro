@@ -107,13 +107,23 @@ SQLite is used. The database:
 
 ## 📸 Interface
 
+
+
 <img width="322" height="453" alt="Знімок екрана 2026-05-04 о 14 09 36" src="https://github.com/user-attachments/assets/782ef3cd-257f-480b-b31f-a280673a33fe" />
+
+
 
 <img width="1728" height="982" alt="Знімок екрана 2026-05-04 о 14 02 03" src="https://github.com/user-attachments/assets/991081f3-2f48-4c56-9f93-24fabac148fb" />
 
+
+
 <img width="1728" height="982" alt="Знімок екрана 2026-05-04 о 14 03 33" src="https://github.com/user-attachments/assets/1f2ee472-8c15-43a1-8373-08cae20faf2f" />
 
+
+
 <img width="397" height="534" alt="Знімок екрана 2026-05-04 о 14 04 24" src="https://github.com/user-attachments/assets/c5843ab1-11cb-4841-813a-504b6a765903" />
+
+
 
 ---
 
