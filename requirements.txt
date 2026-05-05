@@ -1,0 +1,4 @@
+py
+PyQt5
+openpyxl
+matplotlib
